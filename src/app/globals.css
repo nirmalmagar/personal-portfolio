@@ -313,6 +313,7 @@ section {
 span {
   color: var(--main-color);
 }
+
 #about_section {
   font-size: 14px;
   padding-bottom: 12px;
@@ -463,6 +464,7 @@ span {
 }
 .skills {
   min-height: auto;
+  background-color: var(--second-bg-color);
   padding-bottom: 7rem;
 }
 
@@ -752,6 +754,7 @@ form textarea {
     transition: 0.25s;
     z-index: 1;
     transition-delay: 0.25s;
+    font-size:20px;
   }
 
   .navbar.active {
