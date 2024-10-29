@@ -1,26 +1,33 @@
+import { Nunito } from "next/font/google";
 import React from "react";
+
+const nunito = Nunito({
+  subsets: ["latin"],
+  weight: ["400"],
+});
 
 const Section = () => {
   return (
-    <section className="home" id="home">
+    <section className={`home ${nunito.className}`} id="home">
       <div className="home-content">
-        <h1>
+        <h1 className={`${nunito.className}`}>
           Hi, <br /> I'm <span>Nirmal Saru Magar</span>
         </h1>
-        <div className="text-animation">
+        <div className="text-animation ">
+          {/* <h3 className={`${nunito.className}`}>Front-end Developer</h3> */}
           <h3>Front-end Developer</h3>
         </div>
-        <p>
-          With a strong foundation in React, Next.js, Tailwind CSS, and
+        <p className={`${nunito.className}`}>
+          With a strong foundation in React/Next.js, Tailwind CSS, and
           TypeScript, I build responsive and user-friendly web applications. I
           enjoy turning designs into fully functional digital experiences,
           focusing on clean, efficient code and smooth user interactions.
         </p>
         <div className="btn-box">
-          <a href="" className="btn">
+          <a href="" className={`btn ${nunito.className}`}>
             Hire Me
           </a>
-          <a href="" className="btn">
+          <a href="" className={`btn ${nunito.className}`}>
             Let's Talk
           </a>
         </div>

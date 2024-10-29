@@ -1,9 +1,15 @@
 import "./globals.css";
-import { Lato } from "next/font/google";
+import { Lora, Nunito } from "next/font/google";
 
-const lato = Lato({
+// const nunito = Nunito({
+//   subsets: ["latin"],
+//   weight: ["400"],
+// });
+
+const lora = Lora({
   subsets: ["latin"],
-  weight: '100'
+  variable: "--font-lora",
+  style: ["normal", "italic"],
 });
 
 export default function RootLayout({
@@ -14,8 +20,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${lato.className}`}
+        className={`${lora.className}`}
       >
+      
         {children}
       </body>
     </html>

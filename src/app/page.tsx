@@ -1,13 +1,14 @@
 import React from "react";
 import "boxicons/css/boxicons.min.css";
 import Container from "@/components/Container";
-import Education from "../../homePages/Education";
-import Skills from "../../homePages/Skills";
-import Contact from "../../homePages/Contact";
-import Footer from "../../homePages/Footer";
-import Section from "../../homePages/Section";
+import Education from "@/homePages/Education";
+import Skills from "@/homePages/Skills";
+import Contact from "@/homePages/Contact";
+import Footer from "@/homePages/Footer";
+import Section from "@/homePages/Section";
 import Image from "next/image";
 import { Nunito } from "next/font/google";
+import Link from "next/link";
 
 const nunito = Nunito({
   subsets: ["latin"],
@@ -28,23 +29,23 @@ const page = () => {
             </a>
           </div>
           <nav className={`navbar`}>
-            <a href="#home" className={`active ${nunito.className}`}>
+            <Link href="#home" className={`active ${nunito.className}`}>
               Home
-            </a>
-            <a href="#about" className={`navbar ${nunito.className}`}>
+            </Link>
+            <Link href="#about" className={`navbar ${nunito.className}`}>
               About
-            </a>
-            <a className={`${nunito.className}`} href="#education">
+            </Link>
+            <Link className={`${nunito.className}`} href="#education">
               Education
-            </a>
-            <a className={`${nunito.className}`} href="#skills">
+            </Link>
+            <Link className={`${nunito.className}`} href="#skills">
               Skills
-            </a>
-            <a className={`${nunito.className}`} href="#contact">
+            </Link>
+            <Link className={`${nunito.className}`} href="#contact">
               Contact
-            </a>
+            </Link>
 
-            <span className="active-nav"></span>
+            <span className="active-nav"/>
           </nav>
         </header>
       </Container>
