@@ -12,7 +12,7 @@ const Section = () => {
     <section className={`home ${nunito.className}`} id="home">
       <div className="home-content">
         <h1 className={`${nunito.className}`}>
-          Hi, <br /> I'&apos;m <span>Nirmal Saru Magar</span>
+          Hi, <br /> I&apos;m <span>Nirmal Saru Magar</span>
         </h1>
         <div className="text-animation ">
           {/* <h3 className={`${nunito.className}`}>Front-end Developer</h3> */}
