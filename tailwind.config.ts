@@ -11,6 +11,9 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+      },fontFamily: {
+        nunito: ['Nunito', 'sans-serif'], 
+        lora:['lora','sans-serif']
       },
     },
   },

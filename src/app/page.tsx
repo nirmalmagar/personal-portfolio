@@ -45,7 +45,7 @@ const page = () => {
               Contact
             </Link>
 
-            <span className="active-nav"/>
+            <span className="active-nav" />
           </nav>
         </header>
       </Container>
@@ -73,39 +73,41 @@ const page = () => {
               <h3>
                 Front-end <u>developer</u>
               </h3>
-              <p>
-                Hello everyone, I’m a developer with a passion for creating
+              <p className={`font-nunito`}>
+                Hello everyone, I&apos;m a developer with a passion for creating
                 visually appealing and highly functional web applications. With
                 a solid background in technologies such as React, Next.js,
                 Tailwind CSS, and TypeScript, I thrive on transforming
                 innovative ideas into seamless digital experiences.
               </p>
-              {/* <div>
-        <p>
-          I graduated with a Bachelor's degree in Computer Science and
-          Information Technology (BSc.CSIT), which has equipped me with
-          a strong technical foundation and problem-solving skills.
-          During my year of professional experience, I have contributed
-          to various projects, including a Training Management System
-          and the Pace Infosys website, where I honed my skills in UI
-          design and API integration.
-        </p>
-        <p>
-          I enjoy collaborating with cross-functional teams to deliver
-          user-centric solutions. My goal is to write clean,
-          maintainable code and continuously learn new technologies to
-          improve my craft. When I’m not coding, you can find me
-          exploring new web trends, reading about the latest tech
-          developments, or working on personal projects to further
-          enhance my skills.
-        </p>
-        <span id="about_section">
-          Feel free to reach out if you want to connect or discuss
-          potential collaborations!
-        </span>
-      </div> */}
+              <div>
+                <p className="font-nunito">
+                  I graduated with a Bachelor&apos;s degree in Computer Science and
+                  Information Technology (BSc.CSIT), which has equipped me with
+                  a strong technical foundation and problem-solving skills.
+                  During my year of professional experience, I have contributed
+                  to various projects, including a Training Management System
+                  and the Pace Infosys website, where I honed my skills in UI
+                  design and API integration.
+                </p>
+                <p className="font-nunito">
+                  I enjoy collaborating with cross-functional teams to deliver
+                  user-centric solutions. My goal is to write clean,
+                  maintainable code and continuously learn new technologies to
+                  improve my craft. When I&apos;m not coding, you can find me
+                  exploring new web trends, reading about the latest tech
+                  developments, or working on personal projects to further
+                  enhance my skills.
+                </p>
+                <span className="">
+                  <p className="mb-1 text-base">
+                  Feel free to reach out if you want to connect or discuss
+                  potential collaborations! 
+                  </p>
+                </span>
+              </div>
               <div className="btn-box btns">
-                <a href="#" className="btn">
+                <a href="#" className="btn font-nunito">
                   Read More
                 </a>
               </div>

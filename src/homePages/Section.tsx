@@ -1,4 +1,5 @@
 import { Nunito } from "next/font/google";
+import Link from "next/link";
 import React from "react";
 
 const nunito = Nunito({
@@ -24,24 +25,24 @@ const Section = () => {
           focusing on clean, efficient code and smooth user interactions.
         </p>
         <div className="btn-box">
-          <a href="" className={`btn ${nunito.className}`}>
+          <Link href="" className={`btn ${nunito.className}`}>
             Hire Me
-          </a>
-          <a href="" className={`btn ${nunito.className}`}>
+          </Link>
+          <Link href="" className={`btn ${nunito.className}`}>
             Let's Talk
-          </a>
+          </Link>
         </div>
       </div>
       <div className="home-sci">
-        <a href="#instagram">
+        <Link href="https://www.instagram.com/nirmal.magar58/" target="_blank">
           <i className="bx bxl-instagram-alt"></i>
-        </a>
-        <a href="#github">
+        </Link>
+        <Link href="https://github.com/nirmalmagar" target="_blank">
           <i className="bx bxl-github"></i>
-        </a>
-        <a href="#linkedin">
+        </Link>
+        <Link href="https://www.linkedin.com/in/nirmal-magar-977915266/" target="_blank">
           <i className="bx bxl-linkedin" />
-        </a>
+        </Link>
       </div>
       <div className="home-imgHover"></div>
     </section>

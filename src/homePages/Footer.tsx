@@ -2,9 +2,9 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <div className="footer">
       <div className="footer-text">
-        <p>
+        <p className="font-nunito">
           Copyright &copy; 2023 by Nirmal Saru Magar | All Rights Reserved.{" "}
         </p>
       </div>
@@ -13,7 +13,7 @@ const Footer = () => {
           <i className="bx bx-up-arrow-alt"></i>
         </a>
       </div>
-    </footer>
+    </div>
   );
 };
 

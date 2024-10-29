@@ -1,5 +1,7 @@
+import { ToastContainer } from "react-toastify";
 import "./globals.css";
-import { Lora, Nunito } from "next/font/google";
+import "react-toastify/dist/ReactToastify.css";
+import { Lora } from "next/font/google";
 
 // const nunito = Nunito({
 //   subsets: ["latin"],
@@ -23,7 +25,24 @@ export default function RootLayout({
         className={`${lora.className}`}
       >
       
+      <ToastContainer
+          position="top-center"
+          autoClose={1500}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="light"
+          toastStyle={{ 
+            fontSize: "17px", 
+          }}
+          // transition: Bounce,
+        />
         {children}
+        
       </body>
     </html>
   );
