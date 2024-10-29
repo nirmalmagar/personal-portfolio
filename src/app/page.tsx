@@ -122,7 +122,7 @@ const page = () => {
       </Container>
 
       {/* --------------------- skill section design --------------------- */}
-      <div className="sekill-bg">
+      <div className="skills-bg">
         <Container>
           <Skills />
         </Container>
