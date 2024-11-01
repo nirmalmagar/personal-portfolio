@@ -6,6 +6,7 @@ import Skills from "@/homePages/Skills";
 import Contact from "@/homePages/Contact";
 import Footer from "@/homePages/Footer";
 import Section from "@/homePages/Section";
+import ProjectCard from "@/components/ProjectCard";
 import Image from "next/image";
 import { Nunito } from "next/font/google";
 import Link from "next/link";
@@ -35,13 +36,16 @@ const page = () => {
             <Link href="#about" className={`navbar ${nunito.className}`}>
               About
             </Link>
-            <Link className={`${nunito.className}`} href="#education">
+            <Link href="#education" className={`${nunito.className}`}>
               Education
             </Link>
-            <Link className={`${nunito.className}`} href="#skills">
+            <Link href="#skills" className={`${nunito.className}`}>
               Skills
             </Link>
-            <Link className={`${nunito.className}`} href="#contact">
+            <Link href="#projects" className={`${nunito.className}`}>
+              Projects
+            </Link>
+            <Link href="#contact" className={`${nunito.className}`}>
               Contact
             </Link>
 
@@ -82,9 +86,9 @@ const page = () => {
               </p>
               <div>
                 <p className="font-nunito">
-                  I graduated with a Bachelor&apos;s degree in Computer Science and
-                  Information Technology (BSc.CSIT), which has equipped me with
-                  a strong technical foundation and problem-solving skills.
+                  I graduated with a Bachelor&apos;s degree in Computer Science
+                  and Information Technology (BSc.CSIT), which has equipped me
+                  with a strong technical foundation and problem-solving skills.
                   During my year of professional experience, I have contributed
                   to various projects, including a Training Management System
                   and the Pace Infosys website, where I honed my skills in UI
@@ -101,8 +105,8 @@ const page = () => {
                 </p>
                 <span className="">
                   <p className="mb-1 text-base">
-                  Feel free to reach out if you want to connect or discuss
-                  potential collaborations! 
+                    Feel free to reach out if you want to connect or discuss
+                    potential collaborations!
                   </p>
                 </span>
               </div>
@@ -128,10 +132,22 @@ const page = () => {
         </Container>
       </div>
 
+      {/* -------------------projects------------------ */}
+      <div className="project-page">
+        <Container>
+        <ProjectCard />
+        </Container>
+      </div>
+
       {/* ------------------ contact ----------------- */}
+      <div className="contact">
       <Container>
         <Contact />
       </Container>
+      </div>
+      
+
+      {/* -----------------------footer--------------------- */}
       <div className="footer-bg">
         <Container>
           <Footer />

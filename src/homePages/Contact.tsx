@@ -31,8 +31,6 @@ const Contact = () => {
   };
   return (
     <section id="contact" className="contact">
-      <button onClick={()=>name}>nirmalaala</button>
-      <div>
         <div className="row">
           <div className="contact-left">
             <div>
@@ -113,7 +111,6 @@ const Contact = () => {
             </form>
           </div>
         </div>
-      </div>
     </section>
   );
 };

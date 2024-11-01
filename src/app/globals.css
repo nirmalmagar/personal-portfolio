@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* @import url("https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@22..24&display=swap"); */
 
 * {
@@ -293,7 +292,7 @@ section {
   opacity: 0.2;
   transition-duration: 2s;
 }
-.about-section{
+.about-section {
   background: var(--second-bg-color);
 }
 .about {
@@ -320,7 +319,9 @@ span {
   padding-bottom: 12px; 
 }
 */
-
+.project-page {
+  background-color: var(--bg-color);
+}
 .about-img {
   position: relative;
   width: 25rem;
@@ -461,7 +462,7 @@ span {
   padding-top: 0.5rem;
 }
 
-.skills-bg{
+.skills-bg {
   background: var(--second-bg-color);
 }
 .skills {
@@ -554,6 +555,9 @@ span {
 }
 
 /* ------contact------------ */
+.contact {
+  background-color: var(--second-bg-color);
+}
 .contact-left {
   flex-basis: 35%;
 }
@@ -603,6 +607,10 @@ span {
 
 .downloadBtn:hover::before {
   width: 100%;
+}
+
+.contract {
+  background-color: var(--second-bg-color);
 }
 
 .contact-left p {
@@ -658,11 +666,37 @@ form textarea {
   font-size: 18px;
   border-radius: 6px;
 }
-.footer-bg{
+.footer-bg {
   background: var(--second-bg-color);
 }
+
+
+#portfolio-img:hover {
+  filter: brightness(40%);
+}
+  /* animation-duration: 2s;
+
+
+/* #portfolio-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #1c4d70;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+#portfolio-img:hover::before {
+  width: 100%;
+} */
+
+
 .footer {
   display: flex;
+  border-top: 2px solid #183446;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
@@ -756,7 +790,7 @@ form textarea {
     transition: 0.25s;
     z-index: 1;
     transition-delay: 0.25s;
-    font-size:20px;
+    font-size: 20px;
   }
 
   .navbar.active {
